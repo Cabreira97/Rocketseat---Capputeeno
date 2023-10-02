@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { Header } from '@/components/header'
 import './globals.css'
@@ -8,6 +9,13 @@ const saira = Saira({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700']
 })
+=======
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+>>>>>>> 6225b2b84fe06d1f3c22010365a52abbe000ce29
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,11 +28,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+<<<<<<< HEAD
     <html lang="pt-br">
       <body className={saira.className}>
         <Header />
         {children}
       </body>
+=======
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+>>>>>>> 6225b2b84fe06d1f3c22010365a52abbe000ce29
     </html>
   )
 }
